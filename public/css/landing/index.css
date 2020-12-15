@@ -1,0 +1,116 @@
+.login {
+  background-color: #1eafed;
+}
+
+.register {
+  background-image: url('/images/pekora-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  max-height: calc(100vh - 66px);
+  padding-top: 92px;
+  padding-bottom: 132px;
+}
+
+.navbar img {
+  width: 38px !important;
+  height: 38px !important;
+  margin-right: 10px;
+}
+
+.navbar {
+  padding: 14px 0;
+}
+
+.navbar-brand {
+  color: #212529;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-top: auto;
+  padding: 0;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.register-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+  box-sizing: border-box;
+}
+
+.register-quote {
+  width: 100%;
+  max-width: 777px;
+  margin: auto 0;
+  box-sizing: border-box;
+  padding-left: 280px;
+}
+
+.register-quote-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.register-quote-wrapper img {
+  height: 25px;
+  width: auto;
+  margin-right: 20px;
+  align-self: center;
+}
+
+.register-quote-wrapper p {
+  font-size: 32px;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+.register-form {
+  max-width: 333px;
+}
+
+.register-multiple-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.form-register {
+  margin-bottom: 5px;
+}
+
+.password-wrapper {
+  display: flex;
+}
+
+i {
+  cursor: pointer;
+  margin-left: -30px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.fullname {
+  width: 45%;
+}
+
+.date {
+  width: 32%;
+}
+
+.button-primary {
+  color: #202122;
+  background-color: #9beb94;
+  border-color: #9beb94;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.form-control {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
