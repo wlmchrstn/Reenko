@@ -22,7 +22,7 @@
         <div class="content-container">
             @include('component.textarea')
         </div>
-        <div class="content-container">
+        <div class="content-container content-post">
             @include('component.post')
         </div>
     </div>

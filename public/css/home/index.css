@@ -10,3 +10,8 @@
 .content-container {
   margin-bottom: 15px;
 }
+
+.content-post {
+  max-height: calc(100vh - 207px);
+  overflow: scroll;
+}

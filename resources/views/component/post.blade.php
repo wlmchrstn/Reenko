@@ -1,3 +1,4 @@
+@foreach($posts as $post)
 <div class="post-container">
     <div class="user-container">
         <div class="user-image-container">
@@ -6,8 +7,8 @@
             </a>
         </div>
         <div class="user-name-container">
-            <p class="user-name">Reenko</p>
-            <p class="post-date">3h</p>
+            <p class="user-name">{{ $post->user }}</p>
+            <p class="post-date">{{ $post->created_at->diffForHumans() }}</p>
         </div>
         <div class="user-menu-container">
             <div class="user-menu-button">
@@ -16,14 +17,14 @@
         </div>
     </div>
     <div class="item-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi perferendis voluptas magni pariatur! Harum, repellendus perspiciatis sed consequatur in animi distinctio labore laudantium ea cupiditate aliquam odit illum tempore reiciendis?</p>
+        <p>{{ $post->text }}</p>
     </div>
     <div class="counter-container">
         <div class="counter-like">
-            <p>William Christian</p>
+            <p>{{ $post->like }} Like</p>
         </div>
         <div class="counter-comment">
-            <p>1 Comment</p>
+            <p>Comment</p>
         </div>
     </div>
     <div class="button-container">
@@ -38,3 +39,4 @@
         @include('component.comment')
     </div>
 </div>
+@endforeach

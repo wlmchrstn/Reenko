@@ -1,19 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CommentController;
 
 Route::get('/', function () {
     return view('page/landing');
 });
 
-Route::get('/home', function () {
-    return view('page/home');
-});
+Route::get('/home','App\Http\Controllers\PostController@index');
 
-Route::get('/component', function () {
-    return view('component/post');
-});
+Route::post('user/store', 'App\Http\Controllers\UserController@store');
 
-Route::get('/navbar', function () {
-    return view('component/navbar');
-});
+Route::get('user/login', 'App\Http\Controllers\UserController@login');
+
+Route::get('user/logout', 'App\Http\Controllers\UserController@logout');
+
+Route::post('post/store', 'App\Http\Controllers\PostController@store');
+
+Route::post('comment/store', '\App\Http\Controllers\CommentController@store');

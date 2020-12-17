@@ -11,7 +11,7 @@
     <div class="navbar-user-profile">
         <a href="/" rel="nofollow">
             <img class="navbar-profile-image" src="{{URL::asset('/images/ninomaeinanis.gif')}}" alt="Reenko" />
-            <p>William</p>
+            <p>{{ $active_user->full_name }}</p>
         </a>
     </div>
     <div class="navbar-user-setting">
@@ -21,7 +21,7 @@
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item" href="#">Profile Settings</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <li><a class="dropdown-item" href="/user/logout">Logout</a></li>
           </ul>
         </div>
     </div>
